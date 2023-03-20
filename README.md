@@ -66,3 +66,7 @@ To create cluster with above config file.
 ```
 eksctl create cluster --config-file=[file-name].yaml
 ```
+**NOTE:** Don't forget to delete the cluster.
+```
+eksctl delete cluster --config-file=[file-name].yaml
+```
