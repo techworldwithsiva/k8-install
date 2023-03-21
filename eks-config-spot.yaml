@@ -11,4 +11,4 @@ managedNodeGroups:
 - name: spot-1
   spot: true
   ssh:
-    publicKeyName: [place-your-key-here]
+    publicKeyName: kubernetes #place your key
