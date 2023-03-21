@@ -28,8 +28,8 @@ VALIDATE(){
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" &>> $LOG
 
 VALIDATE $? "Downloaded AWS CLI V2"
-
-if [ -d "aws" ]; then
+AWS_FOLDER="aws"
+if [ -d "$AWS_FOLDER" ]; then
     echo -e "AWS directory already exists...$Y SKIPPING Unzip $N"
 else
     unzip awscliv2.zip &>> $LOG
