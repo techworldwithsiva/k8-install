@@ -10,9 +10,7 @@ Below software are mandatory to provision EKS Cluster.
 * AWS CLI V2
 * Kubectl
 
-We can create one EC2 Server and use it as work station to create EKS cluster
-                                            or
-We can use our laptop as workstation to create EKS Cluster
+We can create one EC2 Server and use it as work station to create EKS cluster.
 
 ![alt text](eks-setup-flow.png)
 
