@@ -10,5 +10,5 @@ managedNodeGroups:
 # `instanceTypes` defaults to [`m5.large`]
 - name: spot-1
   spot: true
-  # ssh:
-  #   publicKeyName: my-ec2-keypair
+  ssh:
+    publicKeyName: [place-your-key-here]
