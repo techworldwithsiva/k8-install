@@ -14,7 +14,7 @@ We can create one EC2 Server and use it as work station to create EKS cluster
                                             or
 We can use our laptop as workstation to create EKS Cluster
 
-![alt text](ec2-eks.png)
+![alt text](eks-setup-flow.png)
 
 #### Steps:
 
