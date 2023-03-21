@@ -25,7 +25,7 @@ VALIDATE(){
 
 }
 
-curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" &>> $LOG
+curl -s "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" &>> $LOG
 
 VALIDATE $? "Downloaded AWS CLI V2"
 AWS_FOLDER="aws"
@@ -47,7 +47,7 @@ VALIDATE $?  "Added execute permissions to eksctl"
 mv /tmp/eksctl /usr/local/bin
 VALIDATE $? "moved eksctl to bin folder"
 
-curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.24.10/2023-01-30/bin/linux/amd64/kubectl
+curl -s -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.24.10/2023-01-30/bin/linux/amd64/kubectl
 VALIDATE $? "Downloaded kubectl 1.24 version"
 chmod +x kubectl
 VALIDATE $?  "Added execute permissions to kubectl"
