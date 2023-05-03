@@ -1,4 +1,4 @@
-### EKS Install
+### EKS Install...
 
 *NOTE:* This is for the lab purpose, not for PROD purpose.
 
